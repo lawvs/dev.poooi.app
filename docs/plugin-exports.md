@@ -22,7 +22,7 @@ A plugin could be totally backend without any UI, and if user interaction is req
 * `reducer`: [_Redux reducer_](http://redux.js.org/docs/basics/Reducers.html), as Redux requires a unique global store, if plugin shall maintain the store, a reducer must be provided and main poi will combine it with its own reducers.
   * plugin store will be placed at `store.ext.<pluginPackageName>`, e.g. `store.ext['poi-plugin-prophet']`. It is recommended to use `extensionSelectorFactory('poi-plugin-prophet')` to retrieve data, as to improve readability.
   * plugin store will be emptied upon being disabled
-* `settingClass`: _React.ComponentType_, setting panel for plugin, will be rendered in plugin list, settings view
+* `settingsClass`: _React.ComponentType_, setting panel for plugin, will be rendered in plugin list, settings view
 * `pluginDidLoad`: _function(): void_, no argument, called after plugin is enabled
 * `pluginWillUnload`: _function(): void_, no argument, called before plugin is disabled
 * `switchPluginPath`: _Array_, game response URI list for poi to switch to the plugin if the exact game response got, each element could be a single `string` or an object of shape `{ path: string, valid: function(): boolean }`, the `valid` function will be called when the path matches and returns whether poi could switch to the plugin.
