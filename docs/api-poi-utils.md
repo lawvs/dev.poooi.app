@@ -173,9 +173,9 @@ fixedT('poi poi poi')
 
 ```javascript
 import React, { Component } from 'react'
-import { translate } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
-@translate()
+@withNamespaces()
 class PoiContent extends Component {
   render() {
     const { t } = this.props
