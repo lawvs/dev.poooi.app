@@ -8,7 +8,7 @@ Poi use `Redux` to store and exchange data. Plugin could make use of `Redux` to 
 
 ## Basic usage
 
-Reducers are defined in `views/redux`, store is created in `views/create-store`, and ctions are placed with components.
+Reducers are defined in `views/redux`, store is created in `views/create-store`, and actions are placed with components.
 
 The best practice to access store data is to use `connect` HOC from `react-redux` together with `Reselect` selectors.
 
